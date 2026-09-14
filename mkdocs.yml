@@ -1,0 +1,103 @@
+site_name: Microsoft 365 IT Support & Administration Lab
+site_url: https://solomonaemiro.github.io/microsoft-365-it-support-lab/
+site_description: Hands-on Microsoft 365 IT Support, Exchange Online, Entra ID, SharePoint, Teams and Intune lab
+site_author: Solomon Aemiro Bizuneh
+
+repo_url: https://github.com/solomonaemiro/microsoft-365-it-support-lab
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/cloud-check
+    repo: fontawesome/brands/github
+  palette:
+    # toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+  features:
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+
+  - Project:
+      - Project Overview: overview.md
+      - Lab Environment: environment.md
+      - Support Workflow: workflow.md
+
+  - Microsoft 365 Foundation:
+      - Tenant & Licensing: foundation/tenant-licensing.md
+      - Users & Groups: foundation/users-groups.md
+      - Mailboxes & Resources: foundation/mailboxes-resources.md
+      - Email Configuration: foundation/email-configuration.md
+
+  - Exchange & Collaboration:
+      - Exchange Online: exchange/exchange-online.md
+      - Outlook & Calendar: exchange/outlook-calendar.md
+      - OneDrive: exchange/onedrive.md
+      - SharePoint: exchange/sharepoint.md
+      - Microsoft Teams: exchange/teams.md
+
+  - Entra ID & Intune:
+      - Entra ID & Device Join: endpoint/entra-id.md
+      - Intune Enrollment: endpoint/intune-enrollment.md
+      - Compliance & Configuration: endpoint/compliance-configuration.md
+      - Application Deployment: endpoint/application-deployment.md
+
+  - Support Tickets:
+      - Ticket Index: tickets/index.md
+      - 1. Shared Mailbox Access: tickets/ticket-01.md
+      - 2. Distribution Group Membership: tickets/ticket-02.md
+      - 3. Email Alias Troubleshooting: tickets/ticket-03.md
+      - 4. User Onboarding: tickets/ticket-04.md
+      - 5. Password Reset: tickets/ticket-05.md
+      - 6. Missing Microsoft 365 License: tickets/ticket-06.md
+      - 7. Calendar Delegation: tickets/ticket-07.md
+      - 8. Out-of-Office: tickets/ticket-08.md
+      - 9. Employee Mail Forwarding: tickets/ticket-09.md
+      - 10. Outlook Mobile Setup: tickets/ticket-10.md
+      - 11. SharePoint Document Library: tickets/ticket-11.md
+      - 12. Conference Room Booking: tickets/ticket-12.md
+      - 13. Mailbox Conversion: tickets/ticket-13.md
+      - 14. Employee Offboarding: tickets/ticket-14.md
+      - 15. Teams Access & Membership: tickets/ticket-15.md
+      - 16. Intune Compliance Failure: tickets/ticket-16.md
+
+  - Skills Demonstrated: skills.md
