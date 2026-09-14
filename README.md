@@ -39,6 +39,6 @@ Each scenario documents the user issue, investigation, diagnosis, corrective act
 
 ## Documentation
 
-📖 "View the Full Project Documentation" (https://solomonaemiro.github.io/microsoft-365-it-support-lab/)
+ "View the Full Project Documentation" (https://solomonaemiro.github.io/microsoft-365-it-support-lab/)
 
 The documentation contains the complete environment configuration, technical implementation, support workflow, 16 tickets, screenshots, and skills demonstrated.
